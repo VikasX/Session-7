@@ -1,0 +1,32 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <!-- -------------------------------------Single file so script inside only-->
+        <script type="text/javascript">
+            
+
+            function sum()
+            {
+                var s = 0;
+                var i = 0;
+                                
+                for(i=0; i < arguments.length ; i++ )
+                {
+                    s = s + arguments[i];
+                }
+                return s;                
+            };
+            
+            console.log("Method called : sum(1 , 2 , 3 , 4 , 5)\n" +"Sum using arguments array as parameter is : " + sum(1,2,3,4,5)) ; 
+        
+        </script>
+    </head>
+
+    <body>
+        
+        <h1> Check the console (F12) then  ctrl + ]</h1>
+        
+    </body>
+        
+
+</html>
