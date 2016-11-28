@@ -1,0 +1,30 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <!-- -------------------------------------Single file so script inside only-->
+        <script type="text/javascript">
+            
+
+            function outer(inner)
+            {
+                inner();
+            };
+                
+            function inner(){
+                console.log("Hello world from Inner function");
+            }; 
+                                
+        
+            outer(inner);
+            
+        </script>
+    </head>
+
+    <body>
+        
+        <h1> Check the console (F12) then  ctrl + ]</h1>
+        
+    </body>
+        
+
+</html>
