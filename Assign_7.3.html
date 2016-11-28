@@ -1,0 +1,50 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <!-- -------------------------------------Single file so script inside only-->
+        <script type="text/javascript">
+            
+            var counter = (function() {
+              
+                var privateCounter = 1;
+                
+                function changeBy(val) {
+                    privateCounter += val;
+                }
+                
+              return {
+                
+                  increment: function() {
+                  changeBy(1);
+                },
+                  
+                  decrement: function() {
+                  changeBy(-1);
+                },
+                  
+                  value: function() {
+                  return privateCounter;
+                }
+                     };   
+            })();
+
+            console.log(counter.value()); // logs 1
+            counter.increment();
+            counter.increment();
+            
+            console.log(counter.value()); // logs 3
+            counter.decrement();
+            
+            console.log(counter.value()); // logs 2
+        
+        </script>
+    </head>
+
+    <body>
+        
+        <h1> Check the console (F12) then  ctrl + ]</h1>
+        
+    </body>
+        
+
+</html>
